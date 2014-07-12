@@ -1,0 +1,171 @@
+@import "compass";
+
+//@include global-reset;
+
+body {
+
+  overflow-y: scroll;
+  @import "menu";
+
+  h1, .h1, h2, .h2, h3, .h3 {
+    margin: 5px 0 10px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .main-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url("/img/test/123.jpg") 50% 0 no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    width: 970px;
+  }
+
+  .header-container {
+
+    position: relative;
+    z-index: 2;
+    padding: 40px 0;
+
+    .header-logo-container {
+
+      width: 300px;
+      margin: 0 auto;
+
+      .header-logo {
+
+        width: 100%;
+
+      }
+
+    }
+
+  }
+
+  .main-container {
+
+    padding: 50px 0 0;
+    margin: 0 0 70px;
+    overflow: hidden;
+    position: relative;
+    background: rgba(255, 255, 255, .9);
+
+    .page-content {
+      position: relative;
+      z-index: 2;
+      padding: 30px 0;
+    }
+
+  }
+
+  $portfolio-list-margin: 20px;
+  $portfolio-list-item-width: ((940px / 2) - $portfolio-list-margin);
+  $portfolio-title-padding: 7px;
+  $portfolio-title-width: $portfolio-list-item-width;
+
+  #portfolio-item {
+
+    .item {
+
+      float: left;
+      width: 300px;
+
+      &.image {
+
+        height: 169px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        &.last-in-row {
+          margin-right: 0;
+        }
+
+        img {
+          height: 169px;
+          width: 300px;
+        }
+
+      }
+
+      &.main {
+
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .portfolio-item-image {
+          height: 100%;
+          width: 300px;
+          background-repeat: no-repeat;
+          background-position-x: 50%;
+          background-position-y: 0px;
+        }
+
+      }
+
+    }
+
+  }
+
+  .portfolio-list {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      float: left;
+      margin-right: $portfolio-list-margin;
+      margin-bottom: $portfolio-list-margin;
+
+      &:nth-child(even), .even {
+        margin-right: 0;
+      }
+
+      .portfolio-item-container {
+
+        @include transition-property(all);
+        @include transition-duration(300ms);
+
+        &:hover {
+          @include box-shadow(0 0 20px 3px rgba(0, 0, 0, 0.25));
+        }
+
+        cursor: pointer;
+        position: relative;
+
+        .portfolio-image {
+
+          width: $portfolio-list-item-width;
+
+        }
+
+        .portfolio-title {
+
+          display: block;
+          text-align: right;
+          width: $portfolio-title-width;
+          padding: $portfolio-title-padding;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          color: white;
+          background: rgba(0, 0, 0, 0.6);
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
