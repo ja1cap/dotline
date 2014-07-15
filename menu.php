@@ -10,22 +10,22 @@
                 </a>
             </li>
             <li>
-                <a href="/?page=portfolio-page">
+                <a href="/portfolio">
                     Портфолио
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/service">
                     Сервис
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/studio">
                     Студия
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="/contacts">
                     Контакты
                 </a>
             </li>

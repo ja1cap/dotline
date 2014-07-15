@@ -2,10 +2,75 @@
 
 //@include global-reset;
 
+@mixin zoom-layout(){
+
+  .zoom {
+
+    @include transition-property(all);
+    @include transition-duration(500ms);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    &:after {
+
+      @include opacity(0);
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 36px;
+      width: 36px;
+      background: url(/img/application-sprite.png) no-repeat 8px -742px;
+      border: 2px solid #fff;
+      margin: -20px 0 0 -20px;
+
+    }
+
+  }
+
+  &:hover {
+
+    .zoom {
+
+      background: rgba(106,160,193,0.3);
+
+      &:after {
+
+        @include opacity(1);
+
+      }
+
+    }
+
+  }
+
+}
+
 body {
 
   overflow-y: scroll;
   @import "menu";
+
+  .jspVerticalBar {
+    width: 3px;
+    background: none;
+  }
+
+  .jspTrack {
+    background: rgba(204, 204, 204, 0.25);
+  }
+
+  .jspDrag {
+    background: rgb(120, 205, 209);
+  }
+
+  h1, .h1 {
+    font-size: 32px;
+  }
 
   h1, .h1, h2, .h2, h3, .h3 {
     margin: 5px 0 10px;
@@ -13,6 +78,13 @@ body {
 
   a:hover {
     text-decoration: none;
+  }
+
+  .fancybox {
+    position: relative;
+    display: block;
+    height: 100%;
+    @include zoom-layout;
   }
 
   .main-bg {
@@ -61,6 +133,7 @@ body {
       position: relative;
       z-index: 2;
       padding: 30px 0;
+      min-height: 400px;
     }
 
   }
@@ -100,12 +173,33 @@ body {
         width: 100%;
         margin-bottom: 20px;
 
+        .portfolio-item-content {
+
+          min-height: 169px;
+          max-height: 250px;
+          overflow: auto;
+          position: relative;
+
+          p {
+            padding-right: 7px;
+            text-align: justify;
+          }
+
+        }
+
         .portfolio-item-image {
+
+          display: block;
           height: 100%;
           width: 300px;
           background-repeat: no-repeat;
           background-position-x: 50%;
-          background-position-y: 0px;
+          background-position-y: 50%;
+
+          img {
+            display: none;
+          }
+
         }
 
       }
@@ -132,12 +226,7 @@ body {
 
       .portfolio-item-container {
 
-        @include transition-property(all);
-        @include transition-duration(300ms);
-
-        &:hover {
-          @include box-shadow(0 0 20px 3px rgba(0, 0, 0, 0.25));
-        }
+        @include zoom-layout();
 
         cursor: pointer;
         position: relative;
@@ -169,3 +258,10 @@ body {
   }
 
 }
+
+body .fancybox-nav { text-indent: -99999px; height: 90px; width: 45px; position: absolute; display: block; top: 50%; margin-top: -45px; }
+body .fancybox-nav span { margin: 0; left: 0; right: 0; top: 0; visibility: visible; height: 90px; width: 45px; background: url("/img/sprite.png") no-repeat; }
+body .fancybox-nav.fancybox-prev { left: -45px; }
+body .fancybox-nav.fancybox-prev span { background-position: -363px -428px; }
+body .fancybox-nav.fancybox-next { right: -45px; }
+body .fancybox-nav.fancybox-next span { background-position: -395px -428px; }

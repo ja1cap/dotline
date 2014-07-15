@@ -1,4 +1,4 @@
-/* line 5, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 body {
   overflow-y: scroll;
 }
@@ -10,15 +10,13 @@ body .menu-container {
   z-index: 2;
   width: 100%;
   background: white;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #cccccc;
 }
-/* line 12, ../sass/menu.scss */
+/* line 13, ../sass/menu.scss */
 body .menu-container .container {
   position: relative;
 }
-/* line 16, ../sass/menu.scss */
+/* line 17, ../sass/menu.scss */
 body .menu-container .mini-logo {
   top: 0;
   left: 15px;
@@ -33,50 +31,112 @@ body .menu-container .mini-logo {
   transition-duration: 400ms;
   opacity: 0;
 }
-/* line 25, ../sass/menu.scss */
+/* line 26, ../sass/menu.scss */
 body .menu-container.affix {
   position: fixed;
   z-index: 99;
   top: 0;
   left: 0;
 }
-/* line 31, ../sass/menu.scss */
+/* line 32, ../sass/menu.scss */
 body .menu-container.affix .mini-logo {
   opacity: 1;
 }
-/* line 37, ../sass/menu.scss */
+/* line 38, ../sass/menu.scss */
 body .menu-container .menu-list {
   padding: 0;
   margin: 0;
   display: block;
   text-align: center;
 }
-/* line 44, ../sass/menu.scss */
+/* line 45, ../sass/menu.scss */
 body .menu-container .menu-list li {
   padding: 0;
   margin: 0 5px;
   text-align: center;
   display: inline-block;
 }
-/* line 51, ../sass/menu.scss */
+/* line 52, ../sass/menu.scss */
 body .menu-container .menu-list li a {
   display: block;
   padding: 15px;
 }
-/* line 56, ../sass/menu.scss */
+/* line 57, ../sass/menu.scss */
 body .menu-container .menu-list li a, body .menu-container .menu-list li a:hover {
   color: #4b5c66;
   text-decoration: none;
 }
-/* line 10, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
+body .jspVerticalBar {
+  width: 3px;
+  background: none;
+}
+/* line 63, ../sass/main.scss */
+body .jspTrack {
+  background: rgba(204, 204, 204, 0.25);
+}
+/* line 67, ../sass/main.scss */
+body .jspDrag {
+  background: #78cdd1;
+}
+/* line 71, ../sass/main.scss */
+body h1, body .h1 {
+  font-size: 32px;
+}
+/* line 75, ../sass/main.scss */
 body h1, body .h1, body h2, body .h2, body h3, body .h3 {
   margin: 5px 0 10px;
 }
-/* line 14, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 body a:hover {
   text-decoration: none;
 }
+/* line 83, ../sass/main.scss */
+body .fancybox {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+/* line 7, ../sass/main.scss */
+body .fancybox .zoom {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 /* line 18, ../sass/main.scss */
+body .fancybox .zoom:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 36px;
+  width: 36px;
+  background: url(/img/application-sprite.png) no-repeat 8px -742px;
+  border: 2px solid #fff;
+  margin: -20px 0 0 -20px;
+}
+/* line 37, ../sass/main.scss */
+body .fancybox:hover .zoom {
+  background: rgba(106, 160, 193, 0.3);
+}
+/* line 41, ../sass/main.scss */
+body .fancybox:hover .zoom:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 90, ../sass/main.scss */
 body .main-bg {
   position: fixed;
   left: 0;
@@ -85,26 +145,26 @@ body .main-bg {
   height: 100%;
   width: 100%;
 }
-/* line 27, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 body .container {
   width: 970px;
 }
-/* line 31, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 body .header-container {
   position: relative;
   z-index: 2;
   padding: 40px 0;
 }
-/* line 37, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 body .header-container .header-logo-container {
   width: 300px;
   margin: 0 auto;
 }
-/* line 42, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 body .header-container .header-logo-container .header-logo {
   width: 100%;
 }
-/* line 52, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 body .main-container {
   padding: 50px 0 0;
   margin: 0 0 70px;
@@ -112,86 +172,129 @@ body .main-container {
   position: relative;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 60, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 body .main-container .page-content {
   position: relative;
   z-index: 2;
   padding: 30px 0;
+  min-height: 400px;
 }
-/* line 75, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 body #portfolio-item .item {
   float: left;
   width: 300px;
 }
-/* line 80, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 body #portfolio-item .item.image {
   height: 169px;
   margin-bottom: 20px;
   margin-right: 20px;
 }
-/* line 86, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 body #portfolio-item .item.image.last-in-row {
   margin-right: 0;
 }
-/* line 90, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 body #portfolio-item .item.image img {
   height: 169px;
   width: 300px;
 }
-/* line 97, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 body #portfolio-item .item.main {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 103, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
+body #portfolio-item .item.main .portfolio-item-content {
+  min-height: 169px;
+  max-height: 250px;
+  overflow: auto;
+  position: relative;
+}
+/* line 183, ../sass/main.scss */
+body #portfolio-item .item.main .portfolio-item-content p {
+  padding-right: 7px;
+  text-align: justify;
+}
+/* line 190, ../sass/main.scss */
 body #portfolio-item .item.main .portfolio-item-image {
+  display: block;
   height: 100%;
   width: 300px;
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 0px;
+  background-position-y: 50%;
 }
-/* line 117, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
+body #portfolio-item .item.main .portfolio-item-image img {
+  display: none;
+}
+/* line 211, ../sass/main.scss */
 body .portfolio-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 123, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 body .portfolio-list li {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-/* line 129, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 body .portfolio-list li:nth-child(even), body .portfolio-list li .even {
   margin-right: 0;
 }
-/* line 133, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 body .portfolio-list li .portfolio-item-container {
+  cursor: pointer;
+  position: relative;
+}
+/* line 7, ../sass/main.scss */
+body .portfolio-list li .portfolio-item-container .zoom {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms;
-  cursor: pointer;
-  position: relative;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
-/* line 138, ../sass/main.scss */
-body .portfolio-list li .portfolio-item-container:hover {
-  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.25);
+/* line 18, ../sass/main.scss */
+body .portfolio-list li .portfolio-item-container .zoom:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 36px;
+  width: 36px;
+  background: url(/img/application-sprite.png) no-repeat 8px -742px;
+  border: 2px solid #fff;
+  margin: -20px 0 0 -20px;
 }
-/* line 145, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
+body .portfolio-list li .portfolio-item-container:hover .zoom {
+  background: rgba(106, 160, 193, 0.3);
+}
+/* line 41, ../sass/main.scss */
+body .portfolio-list li .portfolio-item-container:hover .zoom:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 234, ../sass/main.scss */
 body .portfolio-list li .portfolio-item-container .portfolio-image {
   width: 450px;
 }
-/* line 151, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 body .portfolio-list li .portfolio-item-container .portfolio-title {
   display: block;
   text-align: right;
@@ -202,4 +305,47 @@ body .portfolio-list li .portfolio-item-container .portfolio-title {
   bottom: 0;
   color: white;
   background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 262, ../sass/main.scss */
+body .fancybox-nav {
+  text-indent: -99999px;
+  height: 90px;
+  width: 45px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -45px;
+}
+
+/* line 263, ../sass/main.scss */
+body .fancybox-nav span {
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  visibility: visible;
+  height: 90px;
+  width: 45px;
+  background: url("/img/sprite.png") no-repeat;
+}
+
+/* line 264, ../sass/main.scss */
+body .fancybox-nav.fancybox-prev {
+  left: -45px;
+}
+
+/* line 265, ../sass/main.scss */
+body .fancybox-nav.fancybox-prev span {
+  background-position: -363px -428px;
+}
+
+/* line 266, ../sass/main.scss */
+body .fancybox-nav.fancybox-next {
+  right: -45px;
+}
+
+/* line 267, ../sass/main.scss */
+body .fancybox-nav.fancybox-next span {
+  background-position: -395px -428px;
 }

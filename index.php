@@ -1,15 +1,7 @@
-<? $page = (isset($_GET['page']) ? 'pages/' . $_GET['page'] . '.php' : 'pages/main-page.php') ?>
+<? $page = (isset($_GET['page']) ? 'pages/' . $_GET['page'] . '.php' : 'pages/main.php') ?>
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <script type="text/javascript" src="/js/jquery/2.1.1/jquery.min.js"></script>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <link href="/stylesheets/main.css" rel="stylesheet">
-    <script type="text/javascript" src="/js/isotope/isotope.pkgd.min.js"></script>
-</head>
+<? include('head.php') ?>
 <body>
 
     <div class="main-bg"></div>

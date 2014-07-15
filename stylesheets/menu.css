@@ -1,12 +1,22 @@
 /*
-Syntax error: Undefined mixin 'box-shadow'.
-        on line 10 of C:/wamp/www/dotline/sass/menu.scss, in `box-shadow'
-        from line 10 of C:/wamp/www/dotline/sass/menu.scss
+Syntax error: Undefined mixin 'transition-property'.
+        on line 21 of C:/wamp/www/dotline/sass/menu.scss, in `transition-property'
+        from line 21 of C:/wamp/www/dotline/sass/menu.scss
 
 Backtrace:
-C:/wamp/www/dotline/sass/menu.scss:10:in `box-shadow'
-C:/wamp/www/dotline/sass/menu.scss:10
+C:/wamp/www/dotline/sass/menu.scss:21:in `transition-property'
+C:/wamp/www/dotline/sass/menu.scss:21
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -74,4 +84,4 @@ C:/Ruby200-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'box-shadow'.\A         on line 10 of C:/wamp/www/dotline/sass/menu.scss, in `box-shadow'\A         from line 10 of C:/wamp/www/dotline/sass/menu.scss"; }
+  content: "Syntax error: Undefined mixin 'transition-property'.\A         on line 21 of C:/wamp/www/dotline/sass/menu.scss, in `transition-property'\A         from line 21 of C:/wamp/www/dotline/sass/menu.scss"; }
