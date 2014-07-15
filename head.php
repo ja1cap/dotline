@@ -17,7 +17,7 @@
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="/js/jScrollPane/style/jquery.jscrollpane.css" rel="stylesheet" media="all" />
 
-<!--    <!-- the mousewheel plugin - optional to provide mousewheel support -->-->
+<!--    <!-- the mousewheel plugin - optional to provide mousewheel support -->
 <!--    <script type="text/javascript" src="script/jquery.mousewheel.js"></script>-->
 
     <!-- the jScrollPane script -->

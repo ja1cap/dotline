@@ -141,7 +141,7 @@ body .main-bg {
   position: fixed;
   left: 0;
   top: 0;
-  background: url("/img/test/123.jpg") 50% 0 no-repeat;
+  background: url("/img/main-bg.png") 50% 50% no-repeat;
   height: 100%;
   width: 100%;
 }
@@ -179,45 +179,45 @@ body .main-container .page-content {
   padding: 30px 0;
   min-height: 400px;
 }
-/* line 148, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 body #portfolio-item .item {
   float: left;
   width: 300px;
 }
-/* line 153, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 body #portfolio-item .item.image {
   height: 169px;
   margin-bottom: 20px;
   margin-right: 20px;
 }
-/* line 159, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 body #portfolio-item .item.image.last-in-row {
   margin-right: 0;
 }
-/* line 163, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 body #portfolio-item .item.image img {
   height: 169px;
   width: 300px;
 }
-/* line 170, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 body #portfolio-item .item.main {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 176, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 body #portfolio-item .item.main .portfolio-item-content {
   min-height: 169px;
   max-height: 250px;
   overflow: auto;
   position: relative;
 }
-/* line 183, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 body #portfolio-item .item.main .portfolio-item-content p {
   padding-right: 7px;
   text-align: justify;
 }
-/* line 190, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 body #portfolio-item .item.main .portfolio-item-image {
   display: block;
   height: 100%;
@@ -226,27 +226,27 @@ body #portfolio-item .item.main .portfolio-item-image {
   background-position-x: 50%;
   background-position-y: 50%;
 }
-/* line 199, ../sass/main.scss */
+/* line 200, ../sass/main.scss */
 body #portfolio-item .item.main .portfolio-item-image img {
   display: none;
 }
-/* line 211, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 body .portfolio-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 217, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 body .portfolio-list li {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-/* line 223, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 body .portfolio-list li:nth-child(even), body .portfolio-list li .even {
   margin-right: 0;
 }
-/* line 227, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 body .portfolio-list li .portfolio-item-container {
   cursor: pointer;
   position: relative;
@@ -290,11 +290,12 @@ body .portfolio-list li .portfolio-item-container:hover .zoom:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 234, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 body .portfolio-list li .portfolio-item-container .portfolio-image {
+  height: 254px;
   width: 450px;
 }
-/* line 240, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 body .portfolio-list li .portfolio-item-container .portfolio-title {
   display: block;
   text-align: right;
@@ -307,7 +308,7 @@ body .portfolio-list li .portfolio-item-container .portfolio-title {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 262, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 body .fancybox-nav {
   text-indent: -99999px;
   height: 90px;
@@ -318,7 +319,7 @@ body .fancybox-nav {
   margin-top: -45px;
 }
 
-/* line 263, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 body .fancybox-nav span {
   margin: 0;
   left: 0;
@@ -330,22 +331,22 @@ body .fancybox-nav span {
   background: url("/img/sprite.png") no-repeat;
 }
 
-/* line 264, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 body .fancybox-nav.fancybox-prev {
   left: -45px;
 }
 
-/* line 265, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 body .fancybox-nav.fancybox-prev span {
   background-position: -363px -428px;
 }
 
-/* line 266, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 body .fancybox-nav.fancybox-next {
   right: -45px;
 }
 
-/* line 267, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 body .fancybox-nav.fancybox-next span {
   background-position: -395px -428px;
 }
